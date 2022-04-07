@@ -44,15 +44,15 @@ const Name = styled.p`
 
 const Hamburger = styled.div`
     font-size:3.5rem;
-    position:fixed;
+    position:absolute;
     right:0;
     top: 3rem;
-    z-index:99999 ;
+    z-index:5 ;
     padding:2rem;
     cursor:pointer ;
 
     @media (min-width:750px) {
-         display:none; 
+         display:none;
     }
 `
 

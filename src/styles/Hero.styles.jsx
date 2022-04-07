@@ -37,6 +37,10 @@ export const CoverCircle = styled.div`
     z-index: 1 ;
     top: -51rem ;
     left: -30rem ;
+
+    @media (max-width:750px) {
+         display:none; 
+    }
 `
 
 export const Animation = keyframes`
