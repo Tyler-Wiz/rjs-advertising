@@ -6,6 +6,10 @@ export const Container = styled.div`
     padding: 0 7rem 11rem;
     background-color:var(--Grey);
     position:relative ;
+
+    @media (max-width:750px) {
+        flex-direction:column;
+    }
 `
 export  const Circle = styled.div`
     width:clamp(120rem, 5vw, 125rem) ;
@@ -19,7 +23,10 @@ export  const Circle = styled.div`
     border:${({solid}) => 'yes' ? '1px solid #00000029' : ''}  ;
     width: ${props => props.position === 'inner' && '121rem'};
     height:${props => props.position === 'inner' && '102rem'};
-    
+
+    @media (max-width:750px) {
+         display:none; 
+    }
 `
 export const CoverCircle = styled.div`
     width:clamp(122rem, 5vw, 125rem);
@@ -49,11 +56,19 @@ export const Right = styled.div`
     z-index:1 ;
     position: relative;
     animation:${Animation} 2s ease-in-out ;
+
+    @media (max-width:750px) {
+        width:100% ;
+    }
 `
 
 export const Left = styled.div`
     width:50% ;
     z-index:1 ;
+
+    @media (max-width:750px) {
+        width:100% ;
+    }
 `
 
 export const Button = styled.button`
@@ -72,16 +87,23 @@ export const Button = styled.button`
          color:black ;
          transform:scale(.9) ;
      }
+
+     @media (max-width:750px) {
+        padding: 1rem 2rem ;
+        font-size:1.5rem ;
+        margin-right:2rem;
+    }
 `
 
 export const Header = styled.h2`
-    font-size:5rem ;
+    font-size:clamp(3.5rem, 3.5vw, 5rem);
     margin-bottom:3rem;
     text-transform:capitalize ;
 `
 
+
 export const Text = styled.p`
-    font-size:1.8rem;
+    font-size:clamp(1.5rem, 1.5vw, 2rem);;
     margin-bottom:${props => props.spacing === 'four' && '2rem'};
     margin-bottom:${props => props.spacing === 'one' && '1rem'};
     color:#${props => props.color};
@@ -111,4 +133,9 @@ export const Image = styled.img`
     left:${props => props.Yaxis === 'one' && '-13rem'} ;
     left:${props => props.Yaxis === 'two' && '33rem'} ;
     left:${props => props.Yaxis === 'three' && '1rem'} ;
+
+
+    @media (max-width:750px) {
+        display:none ;
+    }
 `

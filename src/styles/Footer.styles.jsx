@@ -7,6 +7,11 @@ export const Container = styled.section`
     align-items:center ;
     background-color:var(--RichBlack) ;
     color:white ;
+
+    @media (max-width:750px) {
+        flex-direction:column-reverse;
+        padding:3rem 1rem;
+    }
 `
 
 export const Wrapper = styled.div`
@@ -15,6 +20,11 @@ export const Wrapper = styled.div`
 
     a{
         text-decoration:none;
+    }
+
+    @media (max-width:750px) {
+        width:100% ;
+        margin-bottom:4rem;
     }
 `
 

@@ -19,4 +19,9 @@ export const Image = styled.img`
     &:hover{
         filter:grayscale(0%)
     }
+
+    @media (max-width:750px) {
+        width:15%;
+        padding:1rem ;
+    }
 `

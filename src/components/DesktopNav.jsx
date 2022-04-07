@@ -27,6 +27,10 @@ const Right = styled.div`
     justify-content:center ;
     align-items:center;
     z-index:2 ;
+
+    @media (max-width:750px) {
+         display:none; 
+    }
 `
 
 const Icon = styled.div`
@@ -49,6 +53,13 @@ const Link = styled.a`
 const Image = styled.img`
     width:15.2rem;
     height:8.8rem ;
+
+    @media (max-width:750px) {
+        margin-top:1.6rem;
+        width:9.2rem;
+        height:6.8rem ; 
+    }
+
 `
 
 export const DesktopNav = () => {
