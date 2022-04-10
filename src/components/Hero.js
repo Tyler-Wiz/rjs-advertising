@@ -5,8 +5,13 @@ import { Container,CoverCircle,Circle,
          Info, Icon, Right, Image 
        } from '../styles/Hero.styles'
 
+import { Clients } from "./Clients";   
+import { Services } from "./Services";
+
 export const Hero = () => {
   return (
+      <>
+      
     <Container>
         <CoverCircle></CoverCircle>
         <Circle position='main' ></Circle>
@@ -38,5 +43,8 @@ export const Hero = () => {
          <Image size='fixed' Xaxis='three' Yaxis='three'  src="./Img/Results.png" alt=''/>
         </Right>
     </Container>
+    <Clients />
+    <Services/>
+    </>
   )
 }

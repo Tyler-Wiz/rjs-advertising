@@ -1,9 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
-import { NavData } from '../data/Data'
-import * as FiIcon from 'react-icons/fi'
 
-const Container = styled.nav`
+export const Container = styled.nav`
     width:100% ;
     padding: 2.5rem 7rem ;
     display:flex ;
@@ -14,13 +11,13 @@ const Container = styled.nav`
     position:relative ;
 `
 
-const Left = styled.div`
+export const Left = styled.div`
     flex:2;
     z-index:2 ;
     position:relative ;
 `
 
-const Right = styled.div`
+export const Right = styled.div`
     flex:2;
     padding-right:2rem;
     display:flex ;
@@ -33,24 +30,24 @@ const Right = styled.div`
     }
 `
 
-const Icon = styled.div`
+export const Icon = styled.div`
     align-self:center ;
 `
 
-const List = styled.ul`
+export const List = styled.ul`
     list-style:none ;
     font-size:2rem ;
     display:flex ;
     align-items:center ;
 `
 
-const Link = styled.a`
+export const Link = styled.a`
     text-decoration:none;
     color:var(--RichBlack) ;
     margin-right:6rem;
 `
 
-const Image = styled.img`
+export const Image = styled.img`
     width:15.2rem;
     height:8.8rem ;
 
@@ -61,25 +58,3 @@ const Image = styled.img`
     }
 
 `
-
-export const DesktopNav = () => {
-  return (
-    <Container>
-        <Left>
-             <a href='/'><Image src='./Img/logo.png'/></a>
-        </Left>
-        <Right>
-            <List>
-                {NavData.map((item, i) => (
-                    <li key={i}>
-                        <Link href="">{item.name}</Link>
-                    </li>
-                ))}
-            </List>
-            <Icon>
-                <FiIcon.FiPhoneCall size={25}/>
-            </Icon>
-        </Right> 
-    </Container>
-  )
-}
