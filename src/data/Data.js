@@ -13,7 +13,7 @@ export const NavData = [
         path:'/contact'
     },
     {
-        name:'Offerings',
+        name:'Ads Offerings',
         icon: <FaIcons.FaTasks />,
         path:'/offerings'
     },

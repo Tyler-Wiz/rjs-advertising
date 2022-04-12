@@ -10,7 +10,6 @@ export const MobileNav = () => {
 
 const [IsOpen, openElement] = Toggle()
 
-
   return (
     <>
         <Hamburger onClick={openElement}>
@@ -19,7 +18,7 @@ const [IsOpen, openElement] = Toggle()
         <Container openMenu={IsOpen}> 
                 {NavData.map((item, id) => (
                         <li key={id}>
-                            <a href='/'>
+                            <a href={item.path}>
                                 <Icon>{item.icon}</Icon>
                                 <Name>{item.name}</Name>
                             </a>
