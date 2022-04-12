@@ -27,10 +27,7 @@ export const Info = styled.div`
      border-radius: 1.6rem;
      box-shadow: rgba(16, 25, 43, 0.3) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
      background-color:rgba(28, 141, 207, 0.2) ;
-     background-color: ${props => props.position === 'middle' && '#db3a097f' };
-
-
-     
+     background-color: ${props => props.position === 'middle' && '#db3a097f' };   
 `
 
 export const Header = styled.h2`

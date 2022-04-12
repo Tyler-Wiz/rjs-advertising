@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 export const Container = styled.section`
 width:70% ;
-margin: 4rem auto;
+margin: 2rem auto;
+padding:2rem ;
 display:flex ;
 justify-content:center ;
 align-items:center ;
@@ -11,7 +12,6 @@ position:relative ;
 
 @media (max-width:750px) {
     width:80% ;
-    /* height:70vh ; */
     flex-direction:column-reverse ;
 }
 `
@@ -32,7 +32,7 @@ z-index:-9999 ;
 
 export const Right = styled.div` 
 background-color:#10192B;
-width:35%;
+width:40%;
 margin-left:10rem;
 padding:5rem ;
 color:var(--Grey);
@@ -43,7 +43,7 @@ color:var(--Grey);
 `
 
 export const Left = styled.div` 
-width:45% ;
+width:55% ;
 padding:6rem ;
 text-align:center ;
 
@@ -126,3 +126,4 @@ export const Socialicon = styled.div`
  color:#10192B ;
  
 `
+

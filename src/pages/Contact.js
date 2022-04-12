@@ -4,7 +4,7 @@ import * as SiIcons from 'react-icons/si'
 import { Form } from '../components/Form'
 import { Container, Float, Wrapper, 
     Socialicon, Left, Header, 
-    Para, Right, Info, Icon 
+    Para, Right, Info, Icon, 
        } from '../styles/Contact.styled'
 
 export const Contact = () => {
