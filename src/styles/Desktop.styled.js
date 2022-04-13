@@ -56,7 +56,7 @@ export const Image = styled.img`
     height:8.8rem ;
 
     @media (max-width:750px) {
-        margin-top:1.6rem;
+        margin-top:1.9rem;
         width:7rem;
         height:5rem ; 
     }
