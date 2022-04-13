@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form'
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom'
+import emailjs from 'emailjs-com'
 
 
 const ErrorMessage = styled.p` 
@@ -26,6 +27,7 @@ export const Form = () => {
         e.preventDefault()
         setIsSubmitted(true)
         console.log("Message submited: " + JSON.stringify(data));
+        emailjs.send('service_hsvsftt', 'template_brr0qvb', data, 'CyMbXRk8pnr8YsgLJ');
         e.target.reset();
     }
 

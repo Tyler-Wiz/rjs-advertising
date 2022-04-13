@@ -11,7 +11,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 position:relative ;
 
 @media (max-width:750px) {
-    width:80% ;
+    width:90% ;
     flex-direction:column-reverse ;
 }
 `
@@ -33,13 +33,13 @@ z-index:-9999 ;
 export const Right = styled.div` 
 background-color:#10192B;
 width:40%;
-margin-left:10rem;
 padding:5rem ;
 color:var(--Grey);
 
 @media (max-width:750px) {
     width:100%;
 }
+
 `
 
 export const Left = styled.div` 
@@ -75,7 +75,7 @@ button{
 }
 
 @media (max-width:750px) {
-    width:80%;
+    width:100%;
 }
 `
 

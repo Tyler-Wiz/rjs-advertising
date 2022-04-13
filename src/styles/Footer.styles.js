@@ -16,7 +16,7 @@ export const Container = styled.section`
 
 export const Wrapper = styled.div`
     width:25% ;
-    margin-left:8rem;
+    padding:3rem ;
 
     a{
         text-decoration:none;

@@ -5,11 +5,12 @@ background-color:white;
 position:fixed ;
 z-index:4 ;
 top:${({openMenu}) => openMenu ? '0px' : '-500px'};;
-right:1rem ;
+right:0 ;
 padding:4rem ;
 width:70% ;
 list-style:none ;
 transition: ${({openMenu}) => openMenu ? '.5s ease-in-out' : '1s ease-in-out'};
+
 
 a { 
    display:flex;
@@ -20,7 +21,7 @@ a {
 }
 
 @media (min-width:750px) {
-     display:none; 
+     display:none;
 }
 `
 
