@@ -9,6 +9,10 @@ export const Container = styled.nav`
     line-height:22.2px ;
     background-color:var(--Grey);
     position:relative ;
+
+    @media (max-width:750px) {
+        padding: 2.5rem 3rem ;
+    }
 `
 
 export const Left = styled.div`
@@ -53,8 +57,8 @@ export const Image = styled.img`
 
     @media (max-width:750px) {
         margin-top:1.6rem;
-        width:9.2rem;
-        height:6.8rem ; 
+        width:7rem;
+        height:5rem ; 
     }
 
 `

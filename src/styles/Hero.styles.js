@@ -9,8 +9,9 @@ export const Container = styled.div`
 
     @media (max-width:750px) {
         flex-direction:column;
-        
+        padding: 2.5rem 3rem 
     }
+
 `
 export  const Circle = styled.div`
     width:clamp(120rem, 5vw, 125rem) ;

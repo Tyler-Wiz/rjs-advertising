@@ -18,12 +18,12 @@ export const Thankyou = () => {
           <a href='https://tooxclusive.com/' target='_blank' rel="noreferrer"><Button>Visit Our Blog</Button></a>
       </div>
       <Para>Lets Connect!</Para>
-      <div>
+      <section>
         <Icon><FaIcons.FaInstagram/></Icon>
         <Icon><FaIcons.FaFacebookSquare/></Icon>
         <Icon><FaIcons.FaTwitterSquare/></Icon>
         <Icon><FaIcons.FaLinkedin/></Icon>
-      </div>
+      </section>
     </Container>
   )
 }

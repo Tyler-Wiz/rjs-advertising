@@ -11,12 +11,27 @@ export const Container = styled.div`
      div{
          display:flex ;
          margin:2rem;
-     } 
+     }
+     
+     section {
+         display:flex ;
+         margin:1rem;
+     }
+
+     @media (max-width:750px) {
+        
+      div{
+         flex-direction:column;
+         justify-content: center ;
+         align-items:center ;
+        }
+     }
 `
 
 export const Header = styled.h2` 
-     font-size: 4rem ;
+     font-size:clamp(4rem, 2vw, 2.5rem) ;
      margin-bottom:2.5rem ;
+     text-align:center ;
 `
 
 export const Button = styled.button` 
@@ -32,11 +47,15 @@ export const Button = styled.button`
 `
 
 export const Icon = styled.div` 
-    font-size:2.5rem ;
+    font-size:2.5rem;
 `
 
 export const Image = styled.img` 
      width:40%;
+
+     @media (max-width:750px) {
+          width:100%
+       }
 `
 
 export const Para = styled.p`
