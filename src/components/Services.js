@@ -25,7 +25,7 @@ export const Services = () => {
                     <Arrow><FaIcons.FaLongArrowAltRight/></Arrow>
                  </LearnContainer>
             </Info>
-            <Info position='middle' onClick={() => {navigate('/offerings')}}>
+            <Info position='middle' onClick={() => {navigate('/video')}}>
                 <Icon><CgIcons.CgWebsite/></Icon>
                 <SubHeader>Video Ads</SubHeader>
                 <Para>Use media formats like audio, video to capture leads fo your product</Para>
@@ -34,7 +34,7 @@ export const Services = () => {
                    <Arrow><FaIcons.FaLongArrowAltRight/></Arrow>
                  </LearnContainer>
             </Info>
-            <Info onClick={() => {navigate('/offerings')}}>
+            <Info onClick={() => {navigate('/banner')}}>
                 <Icon><FaIcons.FaMoneyCheck/></Icon>
                 <SubHeader>Banner Ads</SubHeader>
                 <Para>Generate leads using text, images, and a URL to your website</Para>

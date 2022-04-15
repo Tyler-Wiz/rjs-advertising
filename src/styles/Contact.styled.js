@@ -62,6 +62,7 @@ input, textarea{
     border-bottom:.2rem solid grey;
     text-transform:capitalize;
     font-family: 'Crimson Pro', serif;
+    
 }
 
 button{
@@ -72,10 +73,14 @@ button{
     color:var(--Grey);
     border:none ;
     text-transform:uppercase;
+    display:flex ;
+    justify-content:center ;
+    align-items:center;
 }
 
 @media (max-width:750px) {
     width:100%;
+    padding: 3rem 1.5rem;
 }
 `
 

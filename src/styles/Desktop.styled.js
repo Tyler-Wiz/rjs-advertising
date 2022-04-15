@@ -11,7 +11,7 @@ export const Container = styled.nav`
     position:relative ;
 
     @media (max-width:750px) {
-        padding: 2.5rem 3rem ;
+        padding: 0 3rem ;
     }
 `
 

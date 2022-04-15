@@ -23,6 +23,7 @@ a {
 @media (min-width:750px) {
      display:none;
 }
+
 `
 
 export const Icon = styled.div`
@@ -47,5 +48,9 @@ cursor:pointer ;
 
 @media (min-width:750px) {
      display:none;
+}
+
+@media (max-width:750px) {
+     top: .2rem;
 }
 `

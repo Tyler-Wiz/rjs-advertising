@@ -9,7 +9,7 @@ export const Container = styled.div`
 
     @media (max-width:750px) {
         flex-direction:column;
-        padding: 2.5rem 3rem 
+        padding: 0 3rem 
     }
 
 `
@@ -128,7 +128,7 @@ export const Info = styled.div`
 `
 
 export const Image = styled.img`
-    width:57%;
+    width:clamp(50%, 4.5vw, 40%);
     position:absolute ;
     top:-7rem;
     left:10rem ;

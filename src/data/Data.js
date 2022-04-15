@@ -13,13 +13,19 @@ export const NavData = [
         path:'/contact'
     },
     {
-        name:'Ads Offerings',
+        name:'Banner Ads',
         icon: <FaIcons.FaTasks />,
-        path:'/offerings'
+        path:'/banner'
+    },
+    {
+        name:'Video Ads',
+        icon: <FaIcons.FaChartPie />,
+        path:'/video'
     },
     {
         name:'Case Studies',
         icon: <FaIcons.FaChartPie />,
         path:'/casestudy'
-    }
+    } 
+   
 ]
